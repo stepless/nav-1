@@ -1,0 +1,178 @@
+
+body{
+    background-color: #eee;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.globalHeader{
+    margin-left:26px;
+    margin-right:26px;
+    margin-top:300px;
+    margin-bottom:20px;
+}
+.search{
+    display:flex;
+    align-items:stretch;
+    position:relative;
+    width:100%;
+}
+.search input{
+    border:1px solid #333;
+    border-radius:12px;
+    padding:0 10px;
+    height:52px;
+    flex-grow:1;
+    background-color: inherit;
+    font-size: 22px;
+    color:#666;
+    
+}
+.search .sub{
+    color:#333;
+    padding:13px 13px 13px 6px;
+    position:absolute;
+    right: 0px;
+    top:0;
+    cursor:pointer;
+}
+.search .sub i{
+    font-size: 26px;
+}
+
+.globalMain{
+    padding:20px 5px;
+    margin-left:26px;
+    margin-right:26px;
+}
+.siteList{
+    display:flex;
+    flex-wrap:wrap;
+    margin-right:-12px;
+}
+.siteList .site{
+    width:60px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.siteList .site a{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+}
+.siteList .site .logo{
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    border-radius:50%;
+    background-color: rgb(104, 104, 104);
+    margin-bottom:10px;
+    color:white;
+}
+.siteList .link{
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.siteList .addButton{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    width:60px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+.siteList .addButton .add{
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    border-radius:50%;
+    border:1px solid #333;
+    margin-bottom:10px;
+}
+.addButton .add i{
+    font-size: 30px;
+}
+.siteList .site .delete{
+    position: absolute;
+    width:60px;
+    height: 76px;
+    border-radius:5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding-top:12px;
+    display: none;
+}
+.delete i{
+    font-size: 43px;
+    color:#666;
+}
+@media (min-width:500px) {
+    .search{
+        width:500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .globalHeader{
+        margin-top:200px;
+    }
+    .globalMain{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .siteList{
+        margin-right: -20px;
+    }
+    .siteList .site{
+        margin-right: 24px;
+        width:116px;
+        padding:20px 0;
+    }
+    .siteList .addButton{
+        margin-right: 24px;
+        width:116px;
+        padding:20px 0;
+    }
+    .siteList .site .delete{
+        position: absolute;
+        width:24px;
+        height: 24px;
+        border-radius:5px;
+        background-color: rgba(255, 255, 255, 0);
+        text-align: center;
+        padding-top:4px;
+        right:0;
+        top:0;
+    }
+    .siteList .site .delete i{
+        font-size: 18px;
+        color:#666;
+    }
+    .siteList .site:hover{
+        background-color: rgba(0,0,0,.3);
+        border-radius: 5px;
+    }
+    .siteList .site:hover .delete{
+        display:block;
+    }
+
+    .siteList .addButton:hover{
+        background-color: rgba(0,0,0,.3);
+        border-radius: 5px;
+    }
+}
